@@ -1,0 +1,72 @@
+### this file contains the request done through server side rest api
+
+GET http://localhost:5000/auth/user
+Content-Type: application/json
+
+{
+    "name":"snehal",
+    "company":"Pepcoding",
+    "address":"Noida",
+    "email":"priyanka@gmail.com",
+    "password":"12345"
+    
+}
+
+### insert new user
+POST http://localhost:5000/auth/
+Content-Type: application/json
+
+{
+    "name":"snehal",
+    "company":"Pepcoding",
+    "address":"Noida",
+    "email":"diggidon29@gmail.com",
+    "password":"12345"
+    
+}
+### user singin EndPoint
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    
+    "email":"diggidon29@gmail.com",
+     "password":"Pepcoding123"
+   
+    
+}
+
+### authorization endpoint
+GET  http://localhost:5000/auth/user
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiZGlnZ2lkb24yOUBnbWFpbC5jb20iLCJpYXQiOjE2NjE3NjUyNDIsImV4cCI6MTY2MTc2NTg0Mn0.gA3afBYmD40kgoifZoJkE-jR-9TMn26vgVcOeFJ_WqI
+
+
+### get the refresh tokens from the mongodb
+GET http://localhost:5000/token/fresh-access-jwt
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiZGlnZ2lkb24yOUBnbWFpbC5jb20iLCJpYXQiOjE2NjE3NjUyNDIsImV4cCI6MTY2MTc2NTg0Mn0.gA3afBYmD40kgoifZoJkE-jR-9TMn26vgVcOeFJ_WqI
+
+
+### resest-password endpoint
+POST http://localhost:5000/auth/reset-password
+Content-Type: application/json
+
+{
+    
+    "email":"diggidon29@gmail.com"   
+}
+
+### update-password endpoint
+PATCH http://localhost:5000/auth/update-password
+Content-Type: application/json
+
+{
+    "email":"diggidon29@gmail.com" ,
+    "pin":"202780",
+    "newPassword":"Pepcoding123"
+}
+
+### logout endpoint
+DELETE http://localhost:5000/auth/logout
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiZGlnZ2lkb24yOUBnbWFpbC5jb20iLCJpYXQiOjE2NjE3NjY2MTYsImV4cCI6MTY2MTc2NzIxNn0.YyZAv4ZswWZRCn5E0y_pctu-p4kMc3Ej8QgFeKWTAjQ
+
+

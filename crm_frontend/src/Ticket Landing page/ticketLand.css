@@ -1,0 +1,43 @@
+.table-ticket{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   height: 100%;
+   width: 100%;
+   
+}
+.search{
+    display: flex;
+}
+.table  {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid blue;
+    background-color: beige;
+
+}
+.table tr{
+    margin: 3px;
+}
+.table td{
+    outline: 1px solid black;
+    padding: 3px;
+    margin: 3px;
+    width: fit-content;
+}
+/* .table  tr th{
+    border: 1px solid black;
+    width: fit-content;
+} */
+

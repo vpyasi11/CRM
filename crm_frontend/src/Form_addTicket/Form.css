@@ -1,0 +1,62 @@
+.ticket-show{
+    position: relative;
+    width: 100%;
+    
+}
+.ticket-show button{
+    width: 100%;
+    border: none;
+    background-color: lightgreen;
+}
+.form-show{
+    box-sizing: border-box;
+    position: absolute;
+    top: 70px;
+    right: 120px;
+    margin: 2px;
+    padding: 8px;
+    /* background-color: red; */
+
+    height: 400px;
+    width: 100%;
+}
+.form-container{
+    height: 380px;
+    width: 400px;
+    background-color:lightgoldenrodyellow
+}
+.form-container form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container form #subject{
+    width: 80%;
+    height: 10%;
+    border: none;
+    
+}
+.form-container form #status{
+    width: 80%;
+    height: 10%;
+    border: none;
+}
+.form-container form button{
+    background-color: lightseagreen;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+}
+.form-container form button:hover{
+    transform: scale(1.2,1);
+    background-color: lightblue;
+    transition: ease-in-out;
+    box-shadow: 2px 3px lightseagreen;
+}
+
+
